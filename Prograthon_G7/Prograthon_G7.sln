@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36429.23 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prograthon_G7", "Prograthon_G7.csproj", "{A335C1AD-B22B-4C87-9AE7-D7D62E748962}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A335C1AD-B22B-4C87-9AE7-D7D62E748962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A335C1AD-B22B-4C87-9AE7-D7D62E748962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A335C1AD-B22B-4C87-9AE7-D7D62E748962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A335C1AD-B22B-4C87-9AE7-D7D62E748962}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F27098AB-64E1-44DA-84B1-58CAA94E7B9A}
+	EndGlobalSection
+EndGlobal
