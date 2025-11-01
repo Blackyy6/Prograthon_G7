@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -7,9 +7,29 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Laboratorio\" />
-    <Folder Include="Models\Reserva\" />
-    <Folder Include="Models\Usuario\" />
+    <Compile Remove="Models\Laboratorio\**" />
+    <Compile Remove="Models\Reserva\**" />
+    <Compile Remove="Models\Usuario\**" />
+    <Content Remove="Models\Laboratorio\**" />
+    <Content Remove="Models\Reserva\**" />
+    <Content Remove="Models\Usuario\**" />
+    <EmbeddedResource Remove="Models\Laboratorio\**" />
+    <EmbeddedResource Remove="Models\Reserva\**" />
+    <EmbeddedResource Remove="Models\Usuario\**" />
+    <None Remove="Models\Laboratorio\**" />
+    <None Remove="Models\Reserva\**" />
+    <None Remove="Models\Usuario\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0" />
   </ItemGroup>
 
 </Project>
