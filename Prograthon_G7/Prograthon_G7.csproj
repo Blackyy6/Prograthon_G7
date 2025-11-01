@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\Laboratorio\" />
+    <Folder Include="Models\Reserva\" />
+    <Folder Include="Models\Usuario\" />
+  </ItemGroup>
+
 </Project>
