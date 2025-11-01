@@ -1,4 +1,4 @@
-﻿namespace ProyectoFront.Models
+﻿namespace Prograthon_G7.Models
 {
     public class Reserva
     {
