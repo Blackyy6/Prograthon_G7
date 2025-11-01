@@ -1,26 +1,16 @@
 ﻿namespace ProyectoFront.Models
 {
-    public class ProductoModel
+    public class Usuario
     {
-        public int Id { get; set; }
+        public int UsuarioId { get; set; }
 
         public string Nombre { get; set; }
 
-        public string Descripcion { get; set; }
+        public string Tipo { get; set; } // Estudiante o Profesor
 
-        public decimal Precio { get; set; }
+        public string Correo { get; set; }
 
-        public int Cantidad { get; set; }
-
-        //      CREATE TABLE `u484426513_pac325`.`Producto` (
-        //`Id` INT NOT NULL AUTO_INCREMENT,
-        //`Nombre` VARCHAR(45) NOT NULL,
-        //`Descripcion` VARCHAR(45) NOT NULL,
-        //`Precio` DECIMAL NOT NULL,
-        //`Cantidad` INT NOT NULL,
-        //PRIMARY KEY(`Id`));
-
-
+        public string Departamento { get; set; }
 
     }
 }
