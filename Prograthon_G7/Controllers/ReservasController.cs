@@ -63,6 +63,17 @@ namespace Prograthon_G7.Controllers
         {
             if (ModelState.IsValid)
             {
+                //foreach (var kvp in ModelState)
+                //{
+                //    foreach (var error in kvp.Value.Errors)
+                //    {
+                //        Console.WriteLine($"Field: {kvp.Key}, Error: {error.ErrorMessage}");
+                //    }
+                //}
+
+                reserva.Laboratorio = null;
+                reserva.Usuario = null;
+
                 _context.Add(reserva);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
