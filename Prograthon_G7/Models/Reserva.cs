@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Prograthon_G7.Models
 {
-
+    
     [Table("Reserva")]
     public class Reserva
     {
@@ -12,9 +12,11 @@ namespace Prograthon_G7.Models
         public int ReservaId { get; set; }
 
         // Llave Foránea a Usuario
+        [Required]
         public int UsuarioId { get; set; }
 
         // Llave Foránea a Laboratorio
+        [Required]
         public int LaboratorioId { get; set; }
 
         [Required]
@@ -33,9 +35,11 @@ namespace Prograthon_G7.Models
 
         // Propiedades de navegación para las relaciones
         [ForeignKey("UsuarioId")]
-        public Usuario Usuario { get; set; }
+        public Usuario? Usuario { get; set; }
+
 
         [ForeignKey("LaboratorioId")]
-        public Laboratorio Laboratorio { get; set; }
+        public Laboratorio? Laboratorio { get; set; }
+
     }
 }
