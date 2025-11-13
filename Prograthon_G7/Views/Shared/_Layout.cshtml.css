@@ -7,27 +7,30 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+/* Los colores de enlaces se manejan en accessibility.css con variables CSS */
 a {
-  color: #0077cc;
+  color: var(--link-color, #0077cc);
 }
 
+/* Los estilos de botones primarios se manejan en accessibility.css */
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  color: var(--btn-primary-text, #fff);
+  background-color: var(--btn-primary-bg, #1b6ec2);
+  border-color: var(--btn-primary-border, #1861ac);
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  color: var(--btn-primary-text, #fff);
+  background-color: var(--btn-primary-bg, #1b6ec2);
+  border-color: var(--btn-primary-border, #1861ac);
 }
 
+/* Los bordes usan variables CSS para adaptarse al alto contraste */
 .border-top {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid var(--border-color, #e5e5e5);
 }
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--border-color, #e5e5e5);
 }
 
 .box-shadow {

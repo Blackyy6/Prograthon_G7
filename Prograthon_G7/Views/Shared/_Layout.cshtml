@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - Prograthon_G7</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/accessibility.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Prograthon_G7.styles.css" asp-append-version="true" />
 </head>
 <body>
@@ -44,9 +45,44 @@
             &copy; 2025 - Prograthon_G7 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
+    <!-- Panel de Accesibilidad -->
+    <button id="accessibilityToggleBtn" class="accessibility-toggle-btn" title="Opciones de accesibilidad" aria-label="Abrir opciones de accesibilidad">
+        ♿
+    </button>
+    
+    <div id="accessibilityPanel" class="accessibility-panel hidden">
+        <h5>Opciones de Accesibilidad</h5>
+        <div class="accessibility-controls">
+            <!-- Alto Contraste -->
+            <div class="accessibility-group">
+                <label>Alto Contraste</label>
+                <div class="toggle-container">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="highContrastToggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <span id="highContrastLabel">Desactivado</span>
+                </div>
+            </div>
+            
+            <!-- Tamaño de Fuente -->
+            <div class="accessibility-group">
+                <label>Tamaño de Fuente</label>
+                <div class="accessibility-buttons">
+                    <button class="accessibility-btn font-size-btn" data-size="small" aria-label="Fuente pequeña">A-</button>
+                    <button class="accessibility-btn font-size-btn" data-size="normal" aria-label="Fuente normal">A</button>
+                    <button class="accessibility-btn font-size-btn" data-size="large" aria-label="Fuente grande">A+</button>
+                    <button class="accessibility-btn font-size-btn" data-size="xlarge" aria-label="Fuente muy grande">A++</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/accessibility.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
