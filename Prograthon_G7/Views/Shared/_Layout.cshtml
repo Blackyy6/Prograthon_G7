@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,10 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Prograthon_G7</a>
+
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"
+                   aria-label="Prograthon G7 - Página de inicio">Prograthon_G7</a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -36,6 +39,9 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+
+            <div id="live-alert-region" class="visually-hidden" aria-live="polite" role="status"></div>
+
             @RenderBody()
         </main>
     </div>
@@ -46,15 +52,17 @@
         </div>
     </footer>
 
-    <!-- Panel de Accesibilidad -->
-    <button id="accessibilityToggleBtn" class="accessibility-toggle-btn" title="Opciones de accesibilidad" aria-label="Abrir opciones de accesibilidad">
+    <button id="accessibilityToggleBtn" class="accessibility-toggle-btn"
+            title="Opciones de accesibilidad"
+            aria-label="Abrir opciones de accesibilidad"
+            aria-expanded="false"
+            aria-controls="accessibilityPanel">
         ♿
     </button>
-    
+
     <div id="accessibilityPanel" class="accessibility-panel hidden">
         <h5>Opciones de Accesibilidad</h5>
         <div class="accessibility-controls">
-            <!-- Alto Contraste -->
             <div class="accessibility-group">
                 <label>Alto Contraste</label>
                 <div class="toggle-container">
@@ -65,8 +73,7 @@
                     <span id="highContrastLabel">Desactivado</span>
                 </div>
             </div>
-            
-            <!-- Tamaño de Fuente -->
+
             <div class="accessibility-group">
                 <label>Tamaño de Fuente</label>
                 <div class="accessibility-buttons">
